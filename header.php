@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Education</title>
+		<title>VSOM</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -41,13 +41,13 @@
 			  				<ul>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 			  				</ul>			
 			  			</div>
 			  			<div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
-			  				<a href="tel:+953 012 3654 896"><span class="lnr lnr-phone-handset"></span> <span class="text">+953 012 3654 896</span></a>
-			  				<a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span> <span class="text">support@colorlib.com</span></a>			
+			  				<a href=" 0731 242 3222"><span class="lnr lnr-phone-handset"></span> <span class="text"> +91 0731 242 3222</span></a>
+			  				<a href="vsom.in"><span class="lnr lnr-envelope"></span> <span class="text">info@vsom.in</span></a>			
 			  			</div>
 			  		</div>			  					
 	  			</div>
@@ -55,36 +55,82 @@
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
-			        <a href="index.php"><img src="img/logo.png" alt="" title="" /></a>
+			        <a href="index.php"><img src="img/vsom logo.png" alt="" title="" /></a>
 			      </div>
 			      <nav id="nav-menu-container">
-			        <ul class="nav-menu">
-			          <li><a href="index.php">Home</a></li>
-			          <li><a href="about.php">About</a></li>
-			          <li><a href="courses.php">Courses</a></li>
-			          <li><a href="events.php">Events</a></li>
-			          <li><a href="gallery.php">Gallery</a></li>
-			          <li class="menu-has-children"><a href="">Blog</a>
-			            <ul>
-			              <li><a href="blog-home.php">Blog Home</a></li>
-			              <li><a href="blog-single.php">Blog Single</a></li>
-			            </ul>
-			          </li>	
-			          <li class="menu-has-children"><a href="">Pages</a>
-			            <ul>
-		              		<li><a href="course-details.php">Course Details</a></li>		
-		              		<li><a href="event-details.php">Event Details</a></li>		
-			                <li><a href="elements.php">Elements</a></li>
-					          <li class="menu-has-children"><a href="">Level 2 </a>
-					            <ul>
-					              <li><a href="#">Item One</a></li>
-					              <li><a href="#">Item Two</a></li>
-					            </ul>
-					          </li>					                		
-			            </ul>
-			          </li>					          					          		          
-			          <li><a href="contact.php">Contact</a></li>
-			        </ul>
+					<ul class="nav-menu">
+						<li><a href="index.php">Home</a></li>
+						<li class="menu-has-children"><a href="">About Us</a>
+							<ul>
+								<li><a href="about.php">About Institute</a></li>
+								<li><a href="leadership.php">Leadership</a></li>
+								<li><a href="#">Vision & Mission </a></li>
+			
+							</ul>
+							<li class="menu-has-children"><a href="">Acadamic Programs</a>
+							<ul>
+								<li class="menu-has-children"><a href="">Under Graduate Course </a>
+									<ul>
+										
+										<li class="menu-has-children"><a href="">Commerce</a>
+											<ul>
+												<li><a href="#">B.COM (CA) </a></li>
+												<li><a href="#">B.COM(TAX)</a></li>
+												<li><a href="#">B.com(PLAN)</a></li>
+												<li><a href="#">B.COM(HONOURS)</a></li>
+
+											</ul>
+										</li>
+										<li class="menu-has-children"><a href="">Management</a>
+											<ul>
+												<li><a href="#">BBA </a></li>
+												<li><a href="#">BBA(FOREIGN TRADE)</a></li>
+											</ul>
+										</li>
+										<li class="menu-has-children"><a href="">LAW</a>
+											<ul>
+												<li><a href="#">BA LLB </a></li>
+											</ul>
+										</li>
+										<li class="menu-has-children"><a href="">BCA</a></li>
+									</ul>
+								</li>
+
+								<li class="menu-has-children"><a href="">Post Graduate Course </a>
+									<ul>
+										<li><a href="#">M .COM</a></li>
+										<li><a href="#">MSW</a></li>
+									</ul>
+								</li>
+
+
+								<li class="menu-has-children"><a href="">Value Added Certificates </a>
+									<ul>
+										<li><a href="#">Digital Marketing </a></li>
+										<li><a href="#">Tally ERP 9</a></li>
+										<li><a href="#">Foreign Lanfuage(French)</a></li>
+										<li><a href="#">Personality Development</a></li>
+										<li><a href="#">Industry Visit</a></li>
+									</ul>
+								</li>
+								
+								<li><a href="#">Syllabus</a></li>
+							</ul>
+
+						<li class="menu-has-children"><a href="">Admision</a>
+							<ul>
+								<li><a href="#">Admision Produre</a></li>
+								<li><a href="#">Admision Form</a></li>
+							</ul>
+						</li>
+						<li><a href="gallery.php">Gallery</a></li>
+						<li><a href="events.php">Event</a></li>
+						<li class="menu-has-children"><a href="">Faculty</a>
+						</li>
+						<li><a href="#">Placement</a></li>
+						<li><a href="contact.php">Contact us</a></li>
+					</ul>
+				</nav><!-- #nav-menu-container -->
 			      </nav><!-- #nav-menu-container -->		    		
 		    	</div>
 		    </div>
