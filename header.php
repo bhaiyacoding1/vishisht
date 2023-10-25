@@ -31,6 +31,7 @@
 			<link rel="stylesheet" href="css/main.css">
 
 			<link rel="stylesheet" href="hello.css">
+			
 		</head>
 		<body>	
 		  <header id="header" id="home">
@@ -39,19 +40,20 @@
 			  		<div class="row">
 			  			<div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
 			  				<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.facebook.com/Vishishtschoolofmanagement/" target="_blank"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="https://www.youtube.com/watch?v=Gz98BdVHins" target="_blank"><i class="fa fa-youtube"></i></a></li>
 			  				</ul>			
 			  			</div>
 			  			<div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
 			  				<a href=" 0731 242 3222"><span class="lnr lnr-phone-handset"></span> <span class="text"> +91 0731 242 3222</span></a>
-			  				<a href="vsom.in"><span class="lnr lnr-envelope"></span> <span class="text">info@vsom.in</span></a>			
+			  				<a href="mailto:Info@vsom.in" target="_blank"><span class="lnr lnr-envelope"></span> <span class="text">info@vsom.in</span></a>			
 			  			</div>
 			  		</div>			  					
-	  			</div>
+				</div>
 			</div>
+			<hr >
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
@@ -124,10 +126,10 @@
 							</ul>
 						</li>
 						<li><a href="gallery.php">Gallery</a></li>
-						<li><a href="events.php">Event</a></li>
+						<!-- <li><a href="events.php">Event</a></li> -->
 						<li class="menu-has-children"><a href="">Faculty</a>
 						</li>
-						<li><a href="#">Placement</a></li>
+						<!-- <li><a href="#">Placement</a></li> -->
 						<li><a href="contact.php">Contact us</a></li>
 					</ul>
 				</nav><!-- #nav-menu-container -->

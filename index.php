@@ -1,21 +1,80 @@
 	<?php include "header.php"?>
 			<!-- start banner Area -->
+	
 			<section class="banner-area relative" id="home">
 				<div class="overlay overlay-bg"></div>	
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-between">
 						<div class="banner-content col-lg-9 col-md-12">
 							<h1 class="text-uppercase">
-								We Ensure better education
-								for a better world			
+							Education is not preparation for life education is life itself.		
 							</h1>
 							<p class="pt-10 pb-10">
-								In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble.
+							Vishisht School of Management (VSOM) has a unique opportunity of being ranked high amongst of premier institutes of Central India, comfortably located in the heart of Indore city
 							</p>
-							<a href="#" class="primary-btn text-uppercase">Get Started</a>
-						</div>										
+							<!-- <a href="#" class="primary-btn text-uppercase" >Get Started</a> -->
+							<div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-warning" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2">ENQUIRE NOW!</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+<!-- 	  
+            <div class="modal-body">
+                <form class="row g-3">
+        <div class="col-md-12">
+            <label for="full-name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="full-name">
+        </div>
+        <div class="col-12">
+            <label for="email-id" class="form-label">Email Id:</label>
+            <input type="email" class="form-control" id="email-id" placeholder="xyz@gmail.com">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Address </label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-md-6">
+            <label for="mobile-no" class="form-label">Mobile No:</label>
+            <input type="text" class="form-control" id="mobile-no">
+        </div>
+        <div class="col-md-4 ms-5">
+            <label for="Courses" class="form-label">Courses</label>
+            <select id="Courses" class="form-select">
+            <option selected>B.com</option>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>BFT</option>
+            </select>
+        </div>
+      </div>  -->
+	  
+	  
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" class="btn btn-outline-warning waves-effect">Send <i class="fas fa-paper-plane-o ml-1"></i></a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<div class="primary-btn text-uppercase">
+  <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#orangeModalSubscription" class="primary-btn text-uppercase" style="color:white;">ENQUIRE NOW!</a>
+</div>
+							
+						</div>									
 					</div>
-				</div>					
+				</div>				
 			</section>
 			<!-- End banner Area -->
 
@@ -294,19 +353,70 @@
 								</div>								
 							</div>
 						</div>
+						<?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $name = $_POST['name'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
+        
+      
+      // Connecting to the Database
+      $servername = "localhost";
+      $username = "root";
+      $password = "";
+      $database = "vsom";
+
+      // Create a connection
+      $conn = mysqli_connect($servername, $username, $password, $database);
+      // Die if connection was not successful
+      if (!$conn){
+          die("Sorry we failed to connect: ". mysqli_connect_error());
+      }
+      else{ 
+        // Submit these to a database
+        // Sql query to be executed 
+        $sql = "INSERT INTO `enquire form` (`name`, `number`, `email`) VALUES ('$name', '$phone', '$email')";
+        $result = mysqli_query($conn, $sql);
+ 
+        // if($result){
+        //   echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        //   <strong>Success!</strong> Your entry has been submitted successfully!
+        //   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        //     <span aria-hidden="true">×</span>
+        //   </button>
+        // </div>';
+        // }
+        // else{
+        //     echo "The record was not inserted successfully because of this error ---> ". mysqli_error($conn);
+        //     echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        //   <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused!
+        //   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        //     <span aria-hidden="true">×</span>
+        //   </button>
+        // </div>';
+        // }
+
+      }
+
+    }
+
+    
+?>
 						<div class="col-lg-4 col-md-6 search-course-right section-gap">
-							<form class="form-wrap" action="#">
-								<h4 class="text-white pb-20 text-center mb-30">Search for Available Course</h4>		
+							<form class="form-wrap" action="./index.php" method="post">
+								<h4 class="text-white pb-20 text-center mb-30">ENQUIRE NOW!</h4>		
 								<input type="text" class="form-control" name="name" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" >
 								<input type="phone" class="form-control" name="phone" placeholder="Your Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Phone Number'" >
 								<input type="email" class="form-control" name="email" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'" >
 								<div class="form-select" id="service-select">
 									<select>
 										<option datd-display="">Choose Course</option>
-										<option value="1">Course One</option>
-										<option value="2">Course Two</option>
-										<option value="3">Course Three</option>
-										<option value="4">Course Four</option>
+										<option value="1">B.Com</option>
+										<option value="2">BCA</option>
+										<option value="3">BBA</option>
+										<option value="4">BFT</option>
+										<option value="4">BA LLB</option>
+
 									</select>
 								</div>									
 								<button class="primary-btn text-uppercase">Submit</button>
@@ -418,12 +528,19 @@
 			<!-- Start review Area -->
 			<section class="review-area section-gap relative">
 				<div class="overlay overlay-bg"></div>
-				<div class="container">				
+				<div class="container">	
+				<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Student Feedback</h1>
+							</div>
+						</div>
+					</div>			
 					<div class="row">
 						<div class="active-review-carusel">
 							<div class="single-review item">
 								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Fannie Rowe</h4></a>
+									<a href="#"><h4>Sachin Rathore</h4></a>
 									<div class="star">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
@@ -438,7 +555,7 @@
 							</div>
 							<div class="single-review item">
 								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Hulda Sutton</h4></a>
+									<a href="#"><h4>Atharv Vyash</h4></a>
 									<div class="star">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
@@ -453,7 +570,7 @@
 							</div>
 							<div class="single-review item">
 								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Fannie Rowe</h4></a>
+									<a href="#"><h4>Ashary Thakur</h4></a>
 									<div class="star">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
@@ -468,7 +585,7 @@
 							</div>
 							<div class="single-review item">
 								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Hulda Sutton</h4></a>
+									<a href="#"><h4>Vaibhav Kadam</h4></a>
 									<div class="star">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
@@ -483,7 +600,7 @@
 							</div>	
 							<div class="single-review item">
 								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Fannie Rowe</h4></a>
+									<a href="#"><h4>Pradeep Prajapti</h4></a>
 									<div class="star">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
@@ -498,23 +615,7 @@
 							</div>
 							<div class="single-review item">
 								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Hulda Sutton</h4></a>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
-								<p>
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-								</p>
-							</div>
-							<div class="single-review item">
-								<img src="img/r1.png" alt="">
-								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Fannie Rowe</h4></a>
+									<a href="#"><h4>Anuj Malviya</h4></a>
 									<div class="star">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
@@ -529,7 +630,22 @@
 							</div>
 							<div class="single-review item">
 								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Hulda Sutton</h4></a>
+									<a href="#"><h4>Rohit Sanger</h4></a>
+									<div class="star">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p>
+									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+								</p>
+							</div>
+							<div class="single-review item">
+								<div class="title justify-content-start d-flex">
+									<a href="#"><h4>Piyush Aldak</h4></a>
 									<div class="star">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
