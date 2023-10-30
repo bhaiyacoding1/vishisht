@@ -85,7 +85,7 @@
 						<div class="col-lg-4">
 							<div class="single-feature">
 								<div class="title">
-									<h4>Learn Online Courses</h4>
+									<h4>Learn Value Added Certificates</h4>
 								</div>
 								<div class="desc-wrap">
 									<p>
@@ -99,7 +99,7 @@
 						<div class="col-lg-4">
 							<div class="single-feature">
 								<div class="title">
-									<h4>No.1 of universities</h4>
+									<h4>No.1 Faculty</h4>
 								</div>
 								<div class="desc-wrap">
 									<p>
@@ -112,7 +112,7 @@
 						<div class="col-lg-4">
 							<div class="single-feature">
 								<div class="title">
-									<h4>Huge Library</h4>
+									<h4>Huge Computern Lab</h4>
 								</div>
 								<div class="desc-wrap">
 									<p>

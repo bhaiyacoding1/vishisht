@@ -57,7 +57,7 @@
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
-			        <a href="index.php"><img src="img/vsom logo.png" alt="" title="" /></a>
+			        <a href="index.php"><img src="img/vsomlogo.png" alt="" title="" /></a>
 			      </div>
 			      <nav id="nav-menu-container">
 					<ul class="nav-menu">
@@ -73,38 +73,21 @@
 							<ul>
 								<li class="menu-has-children"><a href="">Under Graduate Course </a>
 									<ul>
-										
-										<li class="menu-has-children"><a href="">Commerce</a>
-											<ul>
-												<li><a href="#">B.COM (CA) </a></li>
-												<li><a href="#">B.COM(TAX)</a></li>
-												<li><a href="#">B.com(PLAN)</a></li>
-												<li><a href="#">B.COM(HONOURS)</a></li>
-
-											</ul>
-										</li>
-										<li class="menu-has-children"><a href="">Management</a>
-											<ul>
-												<li><a href="#">BBA </a></li>
-												<li><a href="#">BBA(FOREIGN TRADE)</a></li>
-											</ul>
-										</li>
-										<li class="menu-has-children"><a href="">LAW</a>
-											<ul>
-												<li><a href="#">BA LLB </a></li>
-											</ul>
-										</li>
-										<li class="menu-has-children"><a href="">BCA</a></li>
+													<li><a href="#">B.COM (CA) </a></li>
+													<li><a href="#">B.COM(TAX)</a></li>
+													<li><a href="#">B.com(PLAN)</a></li>
+													<li><a href="#">B.COM(HONOURS)</a></li>
+													<li><a href="#">BBA </a></li>
+													<li><a href="#">BBA(FOREIGN TRADE)</a></li>
+													<li><a href="#">BA LLB </a></li>
+													<li class="menu-has-children"><a href="">BCA</a></li>
 									</ul>
-								</li>
-
 								<li class="menu-has-children"><a href="">Post Graduate Course </a>
 									<ul>
 										<li><a href="#">M .COM</a></li>
 										<li><a href="#">MSW</a></li>
 									</ul>
 								</li>
-
 
 								<li class="menu-has-children"><a href="">Value Added Certificates </a>
 									<ul>
