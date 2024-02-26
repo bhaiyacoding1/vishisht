@@ -31,6 +31,7 @@
 			<link rel="stylesheet" href="css/main.css">
 
 			<link rel="stylesheet" href="hello.css">
+			<link rel="stylesheet" href="./add_css/add_ext.css">
 			
 		</head>
 		<body>	
@@ -110,7 +111,7 @@
 						</li>
 						<li><a href="gallery.php">Gallery</a></li>
 						<!-- <li><a href="events.php">Event</a></li> -->
-						<li class="menu-has-children"><a href="">Faculty</a>
+						<li class="menu-has-children"><a href="faculty.php">Faculty</a>
 						</li>
 						<!-- <li><a href="#">Placement</a></li> -->
 						<li><a href="contact.php">Contact us</a></li>

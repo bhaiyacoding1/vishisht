@@ -1,0 +1,4 @@
+#header.header-scrolled {
+    transition: all 0.5s;
+    background-color: rgba(128, 0, 0, 0.3);
+}

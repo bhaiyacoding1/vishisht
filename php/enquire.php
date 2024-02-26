@@ -20,7 +20,7 @@
       else{ 
         // Submit these to a database
         // Sql query to be executed 
-        $sql = "INSERT INTO `enquire form` (`name`, `number`, `email`) VALUES ('$name', '$phone', '$email')";
+        $sql = "INSERT INTO `student enquire` (`name`, `number`, `email`, `date`) VALUES ('$name', '$phone', '$email', current_timestamp())";
         $result = mysqli_query($conn, $sql);
  
         if($result){
